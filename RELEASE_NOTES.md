@@ -42,7 +42,25 @@ A tagline can be set with a single H3 inside `## Next`, e.g.
 ## Next
 
 
-_Empty — the previous release consumed every bullet. Add new ones below as you ship work._
+<!-- hivesuite.app#186 -->
+- feature: You can now log in with HiveSigner in the Android and iOS apps — HiveSigner opens in your browser and sends you straight back into HiveSuite, logged in.
+<!-- hivesuite.app#187 -->
+- fix: Posting a post or snap after the app has been open for a while no longer fails with a bare "Not logged in". HiveSuite now restores your wallet session (or switches back to your account) before signing, and if your HiveSigner or HiveAuth login has truly expired it tells you to log in again.
+<!-- hivesuite.app#188 -->
+- fix: Leaderboard: the admin reward-pool Send button no longer disappears after the page has been open a while; a failed reward-status check now shows a Retry button.
+<!-- hivesuite.app#190 -->
+- fix: Admin moderation page: the reported-users list now loads reliably for admins without needing a hard refresh.
+<!-- hivesuite.app#196 -->
+- improvement: Fairer leaderboard rewards — if one person runs several accounts (same device or browser, on-chain links, or repeatedly the same network), only one account is paid; the others are listed under Disqualified and flagged for admin review before payout.
+<!-- hivesuite.app#197 -->
+- improvement: Inbox now loads much further back (so older unreplied replies show up), adds a Load more button at the end of the list, and shows how far back history is loaded.
+<!-- hivesuite.app#199 -->
+- fix: Android app no longer crashes right after login. Push registration is skipped unless the build includes Firebase config (set VITE_PUSH_FIREBASE_CONFIGURED=true once google-services.json is added).
+<!-- hivesuite.app#200 -->
+- improvement: The multi-account vote picker now shows the post's current payout value and whether it's still open for votes (paid-out posts can't be voted on), shows "already voted X%" next to accounts that already voted (pick them again to change the vote), and pre-selects the account you're currently using. It also now appears on @sagarkothari88's posts and comments for everyone else.
+<!-- hivesuite.app#201 -->
+- improvement: 3Speak viewer rewards consent is now read and saved directly with 3Speak, so your choice is the same on every device and on 3speak.tv. A new "3Speak viewer rewards" card in Settings lets you turn it on or off (turning it off warns that 3Speak deletes your stored watch records). HiveSigner users get a link to 3Speak settings instead. Video posts now also include the 1% encoder.pay beneficiary 3Speak requires, and uploads use 3Speak's new embed2 host.
+
 ## How the deploy script consumes this
 
 1. `./deploy.sh` parses the `## Next` section.
