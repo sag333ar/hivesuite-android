@@ -68,6 +68,9 @@ A tagline can be set with a single H3 inside `## Next`, e.g.
 - fix: Growth tab: the daily HP total in the chart tooltip no longer adds your account HP balance; it now shows only that day's HP change.
 <!-- HiveReactKit#13 -->
 - fix: Removed other apps' 3Speak keys that were built into the upload tools; HiveSuite uploads use only its own key, kept on our server.
+<!-- hivesuite.app#206 (re-applies #187) -->
+- fix: When a post, snap, vote or comment from an account logged in with a private posting key is rejected by Hive, you now see the real reason (for example "doesn't have enough Resource Credits (RC)") instead of "failed to sign and/or broadcast transaction".
+- fix: Opening the user menu right after logging in with a private key no longer logs you out.
 
 ## How the deploy script consumes this
 
