@@ -42,6 +42,8 @@ A tagline can be set with a single H3 inside `## Next`, e.g.
 
 ## Next
 
+<!-- HiveReactKit#15 -->
+- fix: On mobile, the HP and RC delegation lists in a profile's Wallet now show who each delegation goes to (avatar and @username, tap to open their profile), and rows no longer run off the right edge.
 
 <!-- hivesuite.app#186 -->
 - feature: You can now log in with HiveSigner in the Android and iOS apps — HiveSigner opens in your browser and sends you straight back into HiveSuite, logged in.
