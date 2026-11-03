@@ -4,6 +4,8 @@ This file is the **single source of truth** for the next version's changelog
 entry. `./deploy.sh` reads the `## Next` section below on every version
 bump, copies each bullet into `src/config/changelog.ts`, and resets the
 section so the cycle can start fresh.
+- HiveSigner login in the Android/iOS app now returns via https://hivesuite.app/hivesigner-callback (App Links / Universal Links), with a hivesuiteapp:// fallback (#186).
+
 
 ## The rule
 
