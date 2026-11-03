@@ -60,6 +60,14 @@ A tagline can be set with a single H3 inside `## Next`, e.g.
 - improvement: The multi-account vote picker now shows the post's current payout value and whether it's still open for votes (paid-out posts can't be voted on), shows "already voted X%" next to accounts that already voted (pick them again to change the vote), and pre-selects the account you're currently using. It also now appears on @sagarkothari88's posts and comments for everyone else.
 <!-- hivesuite.app#201 -->
 - improvement: 3Speak viewer rewards consent is now read and saved directly with 3Speak, so your choice is the same on every device and on 3speak.tv. A new "3Speak viewer rewards" card in Settings lets you turn it on or off (turning it off warns that 3Speak deletes your stored watch records). HiveSigner users get a link to 3Speak settings instead. Video posts now also include the 1% encoder.pay beneficiary 3Speak requires, and uploads use 3Speak's new embed2 host.
+<!-- hivesuite.app#204 -->
+- fix: The Android app no longer crashes right after login. Push notifications are set up properly with Firebase on Android and iOS, and the apps now send crash reports so we can fix problems faster.
+<!-- HiveReactKit#11 -->
+- improvement: If all of your logged-in accounts have already voted on a post, tapping vote now says "You've already voted on this content" instead of opening the account picker.
+<!-- HiveReactKit#12 -->
+- fix: Growth tab: the daily HP total in the chart tooltip no longer adds your account HP balance; it now shows only that day's HP change.
+<!-- HiveReactKit#13 -->
+- fix: Removed other apps' 3Speak keys that were built into the upload tools; HiveSuite uploads use only its own key, kept on our server.
 
 ## How the deploy script consumes this
 
