@@ -42,8 +42,6 @@ A tagline can be set with a single H3 inside `## Next`, e.g.
 
 ## Next
 
-<!-- hivesuite.app#210 + HiveReactKit#16 -->
-- fix: Vertical 3Speak videos now play in a tall frame instead of a letterboxed 16:9 box, and new snaps and replies save each video's real shape (vertical, square or landscape).
 <!-- HiveReactKit#15 -->
 - fix: On mobile, the HP and RC delegation lists in a profile's Wallet now show who each delegation goes to (avatar and @username, tap to open their profile), and rows no longer run off the right edge.
 
