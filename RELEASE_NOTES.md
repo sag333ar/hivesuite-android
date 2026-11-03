@@ -74,6 +74,13 @@ A tagline can be set with a single H3 inside `## Next`, e.g.
 - fix: When a post, snap, vote or comment from an account logged in with a private posting key is rejected by Hive, you now see the real reason (for example "doesn't have enough Resource Credits (RC)") instead of "failed to sign and/or broadcast transaction".
 - fix: Opening the user menu right after logging in with a private key no longer logs you out.
 
+<!-- hivesuite.app#207 -->
+- fix: Settings > 3Speak viewer rewards: if you logged in with a private posting key, you can now turn rewards on or off right in HiveSuite. Before, it said your login method couldn't sign the message.
+<!-- HiveReactKit#14 + hivesuite.app#208 -->
+- fix: Tapping upvote on a post, comment or reply that all your accounts have already voted on now shows the same "You've already voted on this content" message everywhere.
+<!-- hivesuite.app#209 -->
+- fix: The Download APK page no longer shows any APK download links on iPhone or iPad, including older releases.
+
 ## How the deploy script consumes this
 
 1. `./deploy.sh` parses the `## Next` section.
